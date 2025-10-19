@@ -1,0 +1,129 @@
+<section>
+    <div class="container-fluid-1 leftSide">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
+                    <div class="container p-3" data-aos="fade-down">
+                        @if (isActive) {
+                        <h1 class=" mb-1 text-white">{{leftSide.leftSide.name}}</h1>
+                        <h3 class=" mb-4 mt-4 text-white">{{leftSide.leftSide.subtitle}}</h3>
+                        <h1 class=" mb-1 text-white">{{leftSide.leftSide.slogan}}</h1>
+                        <div class="wrapper-btn mt-4">
+                            <button class="btn btn-primary" (click)="clickNav()">{{isAc}}</button>
+                        </div>
+                        }@else {
+                        <button class="btn btn-primary mb-3" (click)="clickNav()">{{isAc}}</button>
+                        <div class="card p-3 shadow-sm border-0" data-aos="fade-up">
+                            <h5 class="fw-bold mb-3">SOCIAL LINKS</h5>
+                            <div class="list-group">
+                                <!-- Twitter -->
+                                <a target="_blank"
+                                    class="list-group-item list-group-item-action d-flex align-items-center mb-2 border rounded">
+                                    <i class="fa-brands fa-x-twitter me-3 text-dark"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-semibold">Follow me on Twitter!</div>
+                                        <small class="text-muted">@Bun sengtri</small>
+                                    </div>
+                                    <i class="bi bi-box-arrow-up-right ms-2"></i>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://instagram.com/Johnhenry" target="_blank"
+                                    class="list-group-item list-group-item-action d-flex align-items-center mb-2 border rounded">
+                                    <i class="fa-brands fa-instagram me-3 text-dark"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-semibold">My Store on Instagram</div>
+                                        <small class="text-muted">@Bun sengtri</small>
+                                    </div>
+                                    <i class="bi bi-box-arrow-up-right ms-2"></i>
+                                </a>
+
+                                <!-- Pinterest -->
+                                <a href="https://pinterest.com" target="_blank"
+                                    class="list-group-item list-group-item-action d-flex align-items-center mb-2 border rounded">
+                                    <i class="fa-brands fa-facebook-f me-3 text-dark"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-semibold">View Me On Facebook</div>
+                                        <small class="text-muted">linkgoeshere</small>
+                                    </div>
+                                    <i class="bi bi-box-arrow-up-right ms-2"></i>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="https://linkedin.com/in/Johnhenry" target="_blank"
+                                    class="list-group-item list-group-item-action d-flex align-items-center border rounded">
+                                    <i class="fa-brands fa-linkedin-in me-3 text-dark"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-semibold">Connect on LinkedIn</div>
+                                        <small class="text-muted">@bun sengtri</small>
+                                    </div>
+                                    <i class="bi bi-box-arrow-up-right ms-2"></i>
+                                </a>
+                                <!-- github -->
+                                <a href="https://linkedin.com/in/Johnhenry" target="_blank"
+                                    class="list-group-item list-group-item-action d-flex align-items-center border rounded">
+                                    <i class="fa-brands fa-github me-3 text-dark"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-semibold">Connect on LinkedIn</div>
+                                        <small class="text-muted">@bun sengtri</small>
+                                    </div>
+                                    <i class="bi bi-box-arrow-up-right ms-2"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        }
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 bg-white p-5">
+                    <div class="container pt-3">
+                        <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
+                            <div class="row g-5">
+                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
+                                        <img src={{leftSide.info.profile}} class="img-fluid w-100"
+                                            style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s"
+                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                    <h1 class="titleWork mb-4 text-uppercase">{{leftSide.info.titleWork}}</h1>
+                                    <p class="mb-4">{{leftSide.info.description}}
+                                        <br>
+                                    <p class="mb-4">{{leftSide.info.expText}}
+
+                                    </p>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                        <p class="text-dark mb-0">123 Street New York.USA</p>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-envelope text-primary me-3"></i>
+                                        <p class="text-dark mb-0">isengtri457@gmail.com</p>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fa fa-phone-alt text-primary me-3"></i>
+                                        <p class="text-dark mb-0">(+099) 706869</p>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                        <p class="text-dark mb-0">Yoursite@ex.com</p>
+                                    </div>
+                                    <div class="wrapper-btn">
+                                        <button class="btn btn-primary">Downlord CV</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

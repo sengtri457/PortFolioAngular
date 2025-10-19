@@ -1,1 +1,154 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #015FC9;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #F2F5F9;
+    --bs-dark: #16243D;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #787878;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+h3 {
+    font-family: "Edu TAS Beginner", cursive;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-family: "Lobster Two", cursive;
+    font-weight: 700;
+}
+
+.titleWork {
+    color: var(--bs-dark);
+}
+
+.leftSide {
+    background-color: var(--bs-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5;
+}
+
+
+i {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.side-navbar {
+    z-index: 1000;
+    background-color: transparent;
+    padding-right: 5px;
+}
+
+.nav-item a {
+
+    width: 45px;
+    height: 45px;
+    color: #0d6efd;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-item a:hover {
+    width: 110px;
+    justify-content: start;
+    background-color: #0d6efd;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.nav-text {
+    opacity: 0;
+    white-space: nowrap;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item a:hover .nav-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+i {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/*** Education Start ***/
+.education-content .education-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .03);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.education-content .education-item:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+.education-content .education-item::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    padding: 0;
+    transform: translateY(-50%);
+    border: 100px solid;
+    border-color: var(--bs-light) transparent var(--bs-light) var(--bs-light);
+    z-index: -1;
+}
+
+.education-content .education-item::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: 100px solid;
+    border-color: var(--bs-light) var(--bs-light) var(--bs-light) transparent;
+    z-index: -1;
+}
+
+/*** Education End ***/

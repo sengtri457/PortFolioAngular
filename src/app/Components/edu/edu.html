@@ -1,0 +1,41 @@
+<section>
+    <div class="container-fluid-1 leftSide">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
+                    <div class="container p-3" data-aos="fade-down">
+                        <h3 class=" mb-1 text-white">{{edu.leftEdu.name}}</h3>
+                        <h1 class=" mb-1 text-white">{{edu.leftEdu.slogan}}</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 bg-white p-5">
+                    <div class="container pt-3">
+                        <div class="education-content h-100 pt-6 ps-6 pb-6">
+                            <div class="row g-4">
+                                @for (item of edu.edu; track $index) {
+                                <div class="col-12">
+                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s"
+                                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <p class="fs-5 mb-0 me-4">{{item.schoolName}}</p>
+                                            <div>
+                                                <span class="fa fa-calendar me-1"></span> {{item.date}}
+                                            </div>
+                                        </div>
+                                        <h4 class="mb-3">{{item.title}}</h4>
+                                        <p class="mb-0">{{item.description}}
+                                        </p>
+                                    </div>
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>

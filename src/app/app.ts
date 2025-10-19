@@ -1,12 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Header } from './Components/header/header';
+import { About } from './Components/about/about';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FormsModule, CommonModule, RouterLink, Header, About],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected title = 'portfolio';
+  navItems = [
+    { icon: 'bi bi-house-door-fill', label: 'Home', link: '/home' },
+    { icon: 'bi bi-person-lines-fill', label: 'About', link: '/about' },
+    { icon: 'bi bi-envelope-fill', label: 'Contact', link: '/contact' },
+    { icon: 'bi bi-briefcase-fill', label: 'Projects', link: '/projects' },
+    { icon: 'bi bi-gear-fill', label: 'Settings', link: '/settings' },
+  ];
 }

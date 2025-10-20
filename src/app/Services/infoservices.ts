@@ -45,6 +45,10 @@ export class Infoservices {
     name: 'Experience',
     slogan: 'My university Experince',
   };
+  public leftSkill: leftSide = {
+    name: 'Skill',
+    slogan: 'My expertise skills',
+  };
   public edu: edu[] = [
     {
       schoolName: 'Hun sen borey 100khanag',

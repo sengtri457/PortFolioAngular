@@ -36,3 +36,8 @@ export interface edu {
   description: string;
   title: string;
 }
+export interface skill {
+  skillName: string;
+  icon: string;
+  counter: number;
+}

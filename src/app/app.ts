@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Header } from './Components/header/header';
 import { About } from './Components/about/about';
+import { Skill } from './Components/skill/skill';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, CommonModule, RouterLink, Header, About],
+  imports: [RouterOutlet, FormsModule, CommonModule, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

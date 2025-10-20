@@ -1,5 +1,13 @@
 import { Injectable } from '@angular/core';
-import { about, edu, info, leftSide, service } from '../Models/info';
+import {
+  about,
+  contact,
+  edu,
+  info,
+  leftSide,
+  portfolio,
+  service,
+} from '../Models/info';
 
 @Injectable({
   providedIn: 'root',
@@ -52,6 +60,14 @@ export class Infoservices {
   public leftService: leftSide = {
     name: 'My Servies',
     slogan: 'What I do for you',
+  };
+  public leftPortfolio: leftSide = {
+    name: 'Portfolio',
+    slogan: 'My Recent Works',
+  };
+  public leftContact: leftSide = {
+    name: 'Contact Me',
+    slogan: 'Let’s Start A New Project Together',
   };
   public edu: edu[] = [
     {
@@ -140,4 +156,124 @@ export class Infoservices {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
     },
   ];
+
+  public portfolio: portfolio[] = [
+    {
+      id: 1,
+      projectName: 'Project 1',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/bakery.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 2,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/coffee-.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 3,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/car.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 4,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/drinking.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 5,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/food.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 6,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/hospital.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 7,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/consultancy.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 8,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/vegetable.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 9,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/ai.webp',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 10,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/aupp.png',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 11,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/Ecomerce.png',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+    {
+      id: 12,
+      projectName: 'Project 2',
+      link: 'https://example.com/project1',
+      pic: '/assets/images/CodeMaster.png',
+      desription: 'Description for Project 1',
+      title: 'Title for Project 1',
+      icon: 'fa-solid fa-eye',
+    },
+  ];
+
+  public contactInfo: contact = {
+    description:
+      'I am available for freelance work. Connect with me via and call in to my account.',
+    Address: '123 Street, Cambodia',
+    Email: 'sengtri457@gmail.com',
+    Phone: '+099 706 869',
+    icon: 'fa-solid fa-envelope',
+  };
 }

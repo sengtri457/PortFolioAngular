@@ -28,12 +28,13 @@ body {
 
 
 h3 {
+    font-size: clamp(0.9rem, 5vw, 1.2rem);
     font-family: "Edu TAS Beginner", cursive;
 }
 
 h1 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-    font-family: "Lobster Two", cursive;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-family: "Jost", sans-serif;
     font-weight: 700;
 }
 
@@ -149,6 +150,49 @@ i {
     border: 100px solid;
     border-color: var(--bs-light) var(--bs-light) var(--bs-light) transparent;
     z-index: -1;
+}
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-xl-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
 }
 
 /*** Education End ***/

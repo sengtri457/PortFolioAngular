@@ -1,0 +1,38 @@
+<section>
+    <div class="container-fluid-1 leftSide">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
+                    <div class="container p-3" data-aos="fade-down">
+                        <h3 class=" mb-1 text-white">{{port.leftPortfolio.name}}</h3>
+                        <h1 class=" mb-1 text-white">{{port.leftPortfolio.slogan}}</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 bg-white p-5">
+                    <div class="container pt-3">
+                        <div class="education-content h-100 pt-6 ps-6 pb-6">
+                            <div class="row">
+                                @for (item of port.portfolio; track $index) {
+                                <div class="col-4">
+                                    <div class="card mb-4 shadow-sm position-relative">
+                                        <img src={{item.pic}} alt="">
+                                        <div class="card-body">
+                                            <h6 class="card-title">{{item.projectName}}</h6>
+                                            <p class="card-text">{{item.desription}}</p>
+                                            <a href="{{item.link}}" target="_blank">View Project
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>

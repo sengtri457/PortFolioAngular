@@ -48,3 +48,19 @@ export interface service {
   subicon: string;
   subdescription: string;
 }
+export interface portfolio {
+  id: number;
+  projectName: string;
+  link: string;
+  pic: string;
+  desription: string;
+  title: string;
+  icon: string;
+}
+export interface contact {
+  description: string;
+  Address: string;
+  Email: string;
+  Phone: string;
+  icon: string;
+}

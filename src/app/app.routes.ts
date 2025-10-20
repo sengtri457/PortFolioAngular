@@ -7,6 +7,8 @@ import { Edu } from './Components/edu/edu';
 import { Exp } from './Components/exp/exp';
 import { Skill } from './Components/skill/skill';
 import { Ser } from './Components/ser/ser';
+import { Portfolio } from './Components/portfolio/portfolio';
+import { Contact } from './Components/contact/contact';
 
 export const routes: Routes = [
   {
@@ -36,5 +38,13 @@ export const routes: Routes = [
   {
     path: 'services',
     component: Ser,
+  },
+  {
+    path: 'portfolio',
+    component: Portfolio,
+  },
+  {
+    path: 'contact',
+    component: Contact,
   },
 ];

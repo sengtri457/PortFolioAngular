@@ -1,0 +1,16 @@
+/*** Service start ***/
+.service-content .service-item {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .03);
+    transition: 0.5s;
+}
+
+.service-content .service-item:hover i {
+    color: var(--bs-primary);
+
+}
+
+.service-content .service-item:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+/*** service End ***/

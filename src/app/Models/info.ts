@@ -41,3 +41,10 @@ export interface skill {
   icon: string;
   counter: number;
 }
+export interface service {
+  ServiceName: string;
+  icon: string;
+  description: string;
+  subicon: string;
+  subdescription: string;
+}

@@ -6,6 +6,7 @@ import { Homepage } from './Components/homepage/homepage';
 import { Edu } from './Components/edu/edu';
 import { Exp } from './Components/exp/exp';
 import { Skill } from './Components/skill/skill';
+import { Ser } from './Components/ser/ser';
 
 export const routes: Routes = [
   {
@@ -31,5 +32,9 @@ export const routes: Routes = [
   {
     path: 'skill',
     component: Skill,
+  },
+  {
+    path: 'services',
+    component: Ser,
   },
 ];

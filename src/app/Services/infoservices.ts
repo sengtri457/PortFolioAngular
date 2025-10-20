@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { about, edu, info, leftSide } from '../Models/info';
+import { about, edu, info, leftSide, service } from '../Models/info';
 
 @Injectable({
   providedIn: 'root',
@@ -48,6 +48,10 @@ export class Infoservices {
   public leftSkill: leftSide = {
     name: 'Skill',
     slogan: 'My expertise skills',
+  };
+  public leftService: leftSide = {
+    name: 'My Servies',
+    slogan: 'What I do for you',
   };
   public edu: edu[] = [
     {
@@ -105,6 +109,35 @@ export class Infoservices {
       title: 'Databse',
       date: 'Year 2',
       description: 'Building Cargarage Management With MEAN STACK',
+    },
+  ];
+  public srvice: service[] = [
+    {
+      ServiceName: 'Web Design',
+      icon: 'fas fa-bezier-curve fa-3x',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+      subicon: 'fa fa-check me-2',
+      subdescription:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+    },
+    {
+      ServiceName: 'Web Development',
+      icon: 'fas fa-laptop-code fa-3x',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+      subicon: 'fa fa-check me-2',
+      subdescription:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+    },
+    {
+      ServiceName: 'Database Design',
+      icon: 'fa-solid fa-database fa-3x',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+      subicon: 'fa fa-check me-2',
+      subdescription:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
     },
   ];
 }

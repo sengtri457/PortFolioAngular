@@ -47,6 +47,8 @@ export interface service {
   description: string;
   subicon: string;
   subdescription: string;
+  subdescription2: string;
+  subdescription3: string;
 }
 export interface portfolio {
   id: number;

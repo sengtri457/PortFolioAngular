@@ -1,6 +1,28 @@
 <section>
+    <div class="blur-overlay" *ngIf="isActives" (click)="isActives = false"></div>
     <div class="container-fluid-1 leftSide">
         <div class="container-fluid">
+            <!-- stopPropagation on root so internal clicks won't trigger document listener -->
+            <div class="circle-nav" [class.active]="isActives">
+                <div class="circle-btn" (click)="toggleNav()">
+                    <i class="bi bi-list m-0" *ngIf="!isActives"></i>
+                    <i class="bi bi-x-lg m-0" *ngIf="isActives"></i>
+                </div>
+
+                <ul class="circle-menu list-unstyled m-0" [class.active]="isActives">
+                    @for (items of link; track $index) {
+                    <li *ngFor="let item of menuItems; let i = index" [style.transform]="getItemPosition(i)">
+                        <!-- stopPropagation on item link just to be extra safe -->
+                        <a href={{items.link}} (click)="$event.stopPropagation()" class="fw-bold">
+                            <h3>
+                                <i class={{item}}></i>
+                            </h3>
+                        </a>
+                    </li>
+                    }
+                </ul>
+            </div>
+
             <div class="row">
                 <div
                     class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
@@ -10,10 +32,16 @@
                         <h3 class=" mb-4 mt-4 text-white">{{leftSide.leftSide.subtitle}}</h3>
                         <h1 class=" mb-1 text-white">{{leftSide.leftSide.slogan}}</h1>
                         <div class="wrapper-btn mt-4">
-                            <button class="btn btn-primary" (click)="clickNav()">{{isAc}}</button>
+                            <!-- <button class="btn btn-primary btn-cv" (click)="clickNav()">
+
+                                {{isAc}}
+                            </button> -->
                         </div>
                         }@else {
-                        <button class="btn btn-primary mb-3" (click)="clickNav()">{{isAc}}</button>
+                        <!-- <button class="btn btn-primary btn-cv mb-4" (click)="clickNav()">
+
+                            {{isAc}}
+                        </button> -->
                         <div class="card p-3 shadow-sm border-0" data-aos="fade-up">
                             <h5 class="fw-bold mb-3">SOCIAL LINKS</h5>
                             <div class="list-group">
@@ -113,10 +141,10 @@
                                         <p class="text-dark mb-0">sengtri457</p>
                                     </div>
                                     <div class="wrapper-btn">
-                                        <button class="btn btn-primary">
+                                        <button class="btn btn-primary btn-cv">
                                             <a href="https://drive.google.com/file/d/1glebGmjmh6N0r0TRmA5SFSbGT-a9v1dp/view?usp=drive_link"
-                                                class="text-white text-decoration-none">
-                                                Downlord CV
+                                                class=" text-decoration-none">
+                                                Explore My CV
                                             </a>
                                         </button>
                                     </div>

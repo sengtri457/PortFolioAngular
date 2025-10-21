@@ -75,21 +75,21 @@ export class Infoservices {
       title: 'High School',
       date: '2017-2023',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.',
+        'I completed my high school education here, where I built a strong foundation in science, math, and technology. This period also helped me develop discipline and teamwork through school projects and activities.',
     },
     {
       schoolName: 'American NorthBridge',
       title: 'English Program',
       date: '2017-2023',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.',
+        'I studied English to improve my communication and writing skills. The program focused on grammar, speaking, and comprehension, which helped me gain confidence in using English in both academic and real-life settings.',
     },
     {
       schoolName: 'Setec Institude',
       title: 'University',
       date: '2024-Now',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, a quasi velit sint atque non saepe quaerat ducimus, nobis error cupiditate, nisi repudiandae dignissimos magnam? Dicta ab possimus tempora nobis.',
+        'I’m currently pursuing my degree at Setec Institute, majoring in Information Technology. Here, I’m learning web development, database design, and project management to prepare for a future in tech.',
     },
   ];
   public exp: edu[] = [
@@ -132,28 +132,31 @@ export class Infoservices {
       ServiceName: 'Web Design',
       icon: 'fas fa-bezier-curve fa-3x',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+        'We create clean, modern, and user-focused designs that bring your ideas to life. Our goal is to make every page visually appealing and easy to use.',
       subicon: 'fa fa-check me-2',
-      subdescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+      subdescription: 'UI/UX Design',
+      subdescription2: 'Visual Branding',
+      subdescription3: 'Responsive Layouts',
     },
     {
       ServiceName: 'Web Development',
       icon: 'fas fa-laptop-code fa-3x',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+        'We build fast, secure, and responsive websites using the latest technologies. From front-end to back-end, we make sure everything runs smoothly.',
       subicon: 'fa fa-check me-2',
-      subdescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+      subdescription: 'Front-End Coding',
+      subdescription2: 'Back-End Integration',
+      subdescription3: 'Performance',
     },
     {
       ServiceName: 'Database Design',
       icon: 'fa-solid fa-database fa-3x',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+        'We design efficient and scalable databases to store and manage your data safely. Our structure ensures speed, reliability, and easy access to information.',
       subicon: 'fa fa-check me-2',
-      subdescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+      subdescription: 'Data Modeling',
+      subdescription2: 'Query Optimization',
+      subdescription3: 'Security & Backup',
     },
   ];
 

@@ -18,7 +18,11 @@ export class App {
     { icon: 'bi bi-house-door-fill', label: 'Home', link: '/home' },
     { icon: 'bi bi-person-lines-fill', label: 'About', link: '/about' },
     { icon: 'bi bi-envelope-fill', label: 'Contact', link: '/contact' },
-    { icon: 'bi bi-briefcase-fill', label: 'Projects', link: '/projects' },
-    { icon: 'bi bi-gear-fill', label: 'Settings', link: '/settings' },
+    { icon: 'bi bi-briefcase-fill', label: 'Projects', link: '/portfolio' },
+    {
+      icon: 'fa-solid fa-graduation-cap',
+      label: 'Edus',
+      link: '/edu',
+    },
   ];
 }

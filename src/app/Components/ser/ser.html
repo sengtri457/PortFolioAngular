@@ -19,22 +19,27 @@
                                         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                                         <div class="row g-4 align-items-center">
                                             <div class="col-xl-2">
-                                                <h6>
+                                                <h6 style="font-size: 1rem;">
                                                     <i class={{item.icon}}></i>
                                                 </h6>
                                             </div>
                                             <div class="col-xl-3">
-                                                <a
-                                                    class="h4 mb-0 text-dark text-decoration-none fw-bold">{{item.ServiceName}}</a>
+                                                <a class="h4 mb-0 text-dark text-decoration-none fw-bold"
+                                                    style="font-size: 1.3rem;">{{item.ServiceName}}</a>
                                             </div>
                                             <div class="col-xl-4">
-                                                <p class="mb-0">{{item.description}}
+                                                <p class="mb-0" style="font-size: 0.85rem;">{{item.description}}
                                                 </p>
                                             </div>
                                             <div class="col-xl-3">
-                                                <p><i class={{item.subicon}}></i> UI/UX Design</p>
-                                                <p><i class={{item.subicon}}></i> Research</p>
-                                                <p class="mb-0"><i class={{item.subicon}}></i> Mobile App</p>
+                                                <p style="font-size: 0.85rem;"><i class={{item.subicon}}></i>
+                                                    {{item.subdescription}}
+                                                </p>
+                                                <p style="font-size: 0.85rem;"><i class={{item.subicon}}></i>
+                                                    {{item.subdescription2}}
+                                                </p>
+                                                <p style="font-size: 0.85rem;" class="mb-0"><i
+                                                        class={{item.subicon}}></i> {{item.subdescription3}}</p>
                                             </div>
                                         </div>
                                     </div>

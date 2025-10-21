@@ -37,20 +37,23 @@ export class Contact {
     this.telegramService.sendMessage(msg).subscribe({
       next: () => {
         this.alertOrder();
-        this.formData = {
-          name: '',
-          email: '',
-          phone: '',
-          project: '',
-          subject: '',
-          message: '',
-        };
+        this.clearform();
       },
       error: (err: any) => {
         console.error('Telegram Error:', err);
         alert('Failed to send message.');
       },
     });
+  }
+  clearform() {
+    this.formData = {
+      name: '',
+      email: '',
+      phone: '',
+      project: '',
+      subject: '',
+      message: '',
+    };
   }
   alertOrder() {
     let timerInterval: any;

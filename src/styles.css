@@ -119,6 +119,7 @@ i {
     box-shadow: 0 0 30px rgba(0, 0, 0, .03);
     transition: 0.5s;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .education-content .education-item:hover {
@@ -150,7 +151,48 @@ i {
     border: 100px solid;
     border-color: var(--bs-light) var(--bs-light) var(--bs-light) transparent;
     z-index: -1;
+    transition: all 0.3s ease-in-out;
 }
+
+.education-item:hover {
+    transform: translateY(-10px);
+}
+
+/* From Uiverse.io by ZacharyCrespin */
+.btn-cv {
+    transition: all 0.5s;
+    font-size: 17px;
+    padding: 1ch 2ch;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    box-shadow:
+        2px 2px 0px hsl(0, 0%, 90%),
+        4px 4px 0px hsl(0, 0%, 80%),
+        6px 6px 0px hsl(0, 0%, 70%),
+        8px 8px 0px hsl(0, 0%, 60%),
+        10px 10px 0px hsl(0, 0%, 50%),
+        12px 12px 0px hsl(0, 0%, 40%),
+        14px 14px 0px hsl(0, 0%, 30%),
+        16px 16px 0px hsl(0, 0%, 20%),
+        18px 18px 0px hsl(0, 0%, 10%);
+}
+
+.btn-cv a {
+    color: #000;
+}
+
+.btn-cv:hover a {
+    color: #fff;
+}
+
+.btn-cv:hover {
+    background-color: var(--bs-dark);
+    box-shadow: none;
+}
+
 
 /*** Button Start ***/
 .btn {

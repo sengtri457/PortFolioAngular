@@ -1,12 +1,23 @@
 /*** Service start ***/
 .service-content .service-item {
     box-shadow: 0 0 30px rgba(0, 0, 0, .03);
-    transition: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 .service-content .service-item:hover i {
     color: var(--bs-primary);
 
+}
+
+.service-item {
+    border-left: 0px solid var(--bs-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    border-left: 10px solid var(--bs-dark);
+    border-radius: 10px;
 }
 
 .service-content .service-item:hover {

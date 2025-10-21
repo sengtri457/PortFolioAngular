@@ -4,3 +4,152 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.circle-nav {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    /* moved from right to left */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bs-light);
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.circle-nav.active {
+    width: 480px;
+    height: 450px;
+    top: -150px;
+    /* expand upward */
+    left: -150px;
+    /* expand toward center-right */
+    border-radius: 50%;
+    background: var(--bs-light);
+}
+
+.circle-btn {
+    position: absolute;
+    /* top: 30px;s */
+    right: 10%;
+    /* background: #000; */
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+.circle-menu li a h3 i {
+    color: #000;
+}
+
+.circle-menu li a h3 i:hover {
+    color: var(--bs-primary);
+}
+
+.circle-btn:hover {
+    background: #111;
+}
+
+.circle-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(15deg);
+    /* adjust rotation for left side */
+    transition: 0.7s ease;
+    opacity: 0;
+}
+
+.circle-menu.active {
+    opacity: 1;
+}
+
+.circle-menu li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.7s ease;
+    transform-origin: center center;
+}
+
+.circle-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.circle-menu a:hover {
+    color: #fff;
+}
+
+.circle-nav.active {
+    animation: glow 1.5s infinite alternate;
+}
+
+@media screen and (max-width:768px) {
+    .circle-nav {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    /* main blur effect */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* subtle dark overlay */
+    z-index: 998;
+    /* behind navbar */
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.blur-overlay.ng-leave,
+.blur-overlay.ng-leave-active {
+    opacity: 0;
+}
+
+.blur-overlay {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* @keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(255, 150, 50, 0.4);
+    }
+
+    to {
+        box-shadow: 0 0 40px rgba(255, 150, 50, 0.8);
+    }
+} */

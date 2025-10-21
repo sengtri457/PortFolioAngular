@@ -6,8 +6,19 @@
     transition: all 0.3s ease;
 }
 
+.card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
 .card:hover .card-body {
-    height: 140px;
+    height: 150px;
     opacity: 1;
     padding: 15px;
 }
@@ -20,4 +31,19 @@
     left: 50%;
     z-index: 1;
 
+}
+
+.card a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.card button:hover {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }

@@ -14,14 +14,17 @@
                         <div class="education-content h-100 pt-6 ps-6 pb-6">
                             <div class="row">
                                 @for (item of port.portfolio; track $index) {
-                                <div class="col-4">
+                                <div class="col-lg-4 col-6">
                                     <div class="card mb-4 shadow-sm position-relative">
                                         <img src={{item.pic}} alt="">
                                         <div class="card-body">
-                                            <h6 class="card-title">{{item.projectName}}</h6>
-                                            <p class="card-text">{{item.desription}}</p>
-                                            <a href="{{item.link}}" target="_blank">View Project
-                                            </a>
+                                            <h6 class="fw-bold">{{item.projectName}}</h6>
+                                            <p class="fw-light" style="font-size: 0.85rem;">{{item.desription}}</p>
+                                            <button class="btn btn-primary btn-sm rounded-5">
+                                                <a href="{{item.link}}" target="_blank"
+                                                    class="fw-light  text-white">View Project
+                                                </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

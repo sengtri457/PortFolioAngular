@@ -1,3 +1,5 @@
+@defer (on timer(3000ms)) {
+
 <div class="side-navbar position-fixed top-50 translate-middle-y end-0">
     <ul class="list-unstyled mb-0">
         <li *ngFor="let item of navItems" class="nav-item mb-2">
@@ -18,3 +20,15 @@
     </ul>
 </div>
 <router-outlet />
+}@placeholder {
+<!-- From Uiverse.io by nawinasokan -->
+<div class="loader-con">
+    <div style="--i: 0;" class="pfile"></div>
+    <div style="--i: 1;" class="pfile"></div>
+    <div class="pfile" style="--i: 2;"></div>
+    <div class="pfile" style="--i: 3;"></div>
+    <div class="pfile" style="--i: 4;"></div>
+    <div class="pfile" style="--i: 5;"></div>
+
+</div>
+}

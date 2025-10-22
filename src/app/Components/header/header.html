@@ -1,11 +1,11 @@
 <section>
     <div class="blur-overlay" *ngIf="isActives" (click)="isActives = false"></div>
-    <div class="container-fluid-1 leftSide">
+    <div class="container-fluid-1 leftSide" [ngClass]="leftSide.themeLeft()">
         <div class="container-fluid">
             <!-- stopPropagation on root so internal clicks won't trigger document listener -->
             <div class="circle-nav" [class.active]="isActives">
                 <div class="circle-btn" (click)="toggleNav()">
-                    <i class="bi bi-list m-0" *ngIf="!isActives"></i>
+                    <i class="fa-solid fa-link m-0" *ngIf="!isActives"></i>
                     <i class="bi bi-x-lg m-0" *ngIf="isActives"></i>
                 </div>
 
@@ -20,17 +20,18 @@
                         </a>
                     </li>
                     }
+
                 </ul>
             </div>
 
             <div class="row">
                 <div
                     class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
-                    <div class="container p-3" data-aos="fade-down">
+                    <div class="container p-3">
                         @if (isActive) {
-                        <h1 class=" mb-1 text-white">{{leftSide.leftSide.name}}</h1>
-                        <h3 class=" mb-4 mt-4 text-white">{{leftSide.leftSide.subtitle}}</h3>
-                        <h1 class=" mb-1 text-white">{{leftSide.leftSide.slogan}}</h1>
+                        <h1 class=" mb-1 ">{{leftSide.leftSide.name}}</h1>
+                        <h3 class=" mb-4 mt-4 ">{{leftSide.leftSide.subtitle}}</h3>
+                        <h1 class=" mb-1 ">{{leftSide.leftSide.slogan}}</h1>
                         <div class="wrapper-btn mt-4">
                             <!-- <button class="btn btn-primary btn-cv" (click)="clickNav()">
 
@@ -105,20 +106,21 @@
                         }
                     </div>
                 </div>
-                <div class="col-12 col-lg-9 bg-white p-5 headers-img">
+                <div class="col-12 col-lg-9 p-5 headers-img" [ngClass]="leftSide.theme()">
                     <div class="container pt-3">
                         <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
                             <div class="row g-5">
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s"
+                                <div class="col-xl-6 wow fadeInUp wrap-img" data-wow-delay="0.1s"
                                     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
+                                    <div class="bg-light p-4  wrap-img"
+                                        style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
                                         <img src={{leftSide.info.profile}} class="img-fluid w-100"
                                             style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
                                     </div>
                                 </div>
                                 <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s"
                                     style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                                    <h1 class="titleWork mb-4 text-uppercase">{{leftSide.info.titleWork}}</h1>
+                                    <h3 class="titleWork mb-4 text-uppercase fw-bold">{{leftSide.info.titleWork}}</h3>
                                     <p class="mb-4">{{leftSide.info.description}}
                                         <br>
                                     <p class="mb-4">{{leftSide.info.expText}}
@@ -126,19 +128,19 @@
                                     </p>
                                     <div class="d-flex align-items-center mb-2">
                                         <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">123 Street Cambodia</p>
+                                        <p class="mb-0">123 Street Cambodia</p>
                                     </div>
                                     <div class="d-flex align-items-center mb-2">
                                         <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">sengtri457@gmail.com</p>
+                                        <p class="mb-0">sengtri457@gmail.com</p>
                                     </div>
                                     <div class="d-flex align-items-center mb-2">
                                         <i class="fa fa-phone-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">(+099) 706869</p>
+                                        <p class="mb-0">(+099) 706869</p>
                                     </div>
                                     <div class="d-flex align-items-center mb-4">
                                         <i class="fa-brands fa-github me-3 text-primary"></i>
-                                        <p class="text-dark mb-0">sengtri457</p>
+                                        <p class="mb-0">sengtri457</p>
                                     </div>
                                     <div class="wrapper-btn">
                                         <button class="btn btn-primary btn-cv">

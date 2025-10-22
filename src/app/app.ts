@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Header } from './Components/header/header';
-import { About } from './Components/about/about';
-import { Skill } from './Components/skill/skill';
+
+import { Infoservices } from './Services/infoservices';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +13,9 @@ import { Skill } from './Components/skill/skill';
 })
 export class App {
   protected title = 'portfolio';
+
+  app = inject(Infoservices);
+
   navItems = [
     { icon: 'bi bi-house-door-fill', label: 'Home', link: '/home' },
     { icon: 'bi bi-person-lines-fill', label: 'About', link: '/about' },
@@ -23,6 +25,11 @@ export class App {
       icon: 'fa-solid fa-graduation-cap',
       label: 'Edus',
       link: '/edu',
+    },
+    {
+      icon: 'fa-solid fa-circle-half-stroke',
+      label: 'Dark',
+      link: '/',
     },
   ];
 }

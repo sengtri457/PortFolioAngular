@@ -2,14 +2,14 @@
     <div class="container-fluid-1 leftSide">
         <div class="container-fluid">
             <div class="row">
-                <div
-                    class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
-                    <div class="container p-3" data-aos="fade-down">
-                        <h3 class=" mb-1 text-white">{{about.leftAbout.name}}</h3>
-                        <h1 class=" mb-1 text-white">{{about.leftAbout.slogan}}</h1>
+                <div class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer"
+                    [ngClass]="about.themeLeft()">
+                    <div class="container p-3">
+                        <h3 class=" mb-1 ">{{about.leftAbout.name}}</h3>
+                        <h1 class=" mb-1 ">{{about.leftAbout.slogan}}</h1>
                     </div>
                 </div>
-                <div class="col-12 col-lg-9 bg-white p-5">
+                <div class="col-12 col-lg-9 p-5" [ngClass]="about.theme()">
                     <div class="container pt-3">
                         <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
                             <div class="row g-5">
@@ -23,7 +23,7 @@
                                 </div>
                                 <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s"
                                     style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                                    <h3 class="titleWork mb-4 text-uppercase">{{about.about.titleName}}</h3>
+                                    <h3 class="titleWork mb-4 text-uppercase fw-bold">{{about.about.titleName}}</h3>
                                     <p class="mb-4">{{about.about.description}}
                                         <br>
                                     <p class="mb-4">{{about.about.expText}}
@@ -31,27 +31,27 @@
                                     <div class="describeInfo">
                                         <div class="row">
                                             <div class="col-lg-6 col-12">
-                                                <p><strong class="text-dark">
+                                                <p><strong>
                                                         Phone:
                                                     </strong> <span>{{about.about.phone}}</span></p>
                                             </div>
                                             <div class="col-lg-6 col-12">
-                                                <p><strong class="text-dark">
+                                                <p><strong>
                                                         Nationality:
                                                     </strong> <span>{{about.about.Nationality}}</span></p>
                                             </div>
                                             <div class="col-lg-6 col-12">
-                                                <p><strong class="text-dark">
+                                                <p><strong>
                                                         Address:
                                                     </strong> <span>{{about.about.Address}}</span></p>
                                             </div>
                                             <div class="col-lg-6 col-12">
-                                                <p><strong class="text-dark">
+                                                <p><strong>
                                                         Email:
                                                     </strong> <span>{{about.about.Email}}</span></p>
                                             </div>
                                             <div class="col-lg-6 col-12">
-                                                <p><strong class="text-dark">
+                                                <p><strong>
                                                         Freelancer:
                                                     </strong> <span>{{about.about.Freelancer}}</span></p>
                                             </div>

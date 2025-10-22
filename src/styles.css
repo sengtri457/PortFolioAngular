@@ -112,6 +112,8 @@ i {
     margin-left: 10px;
 }
 
+
+
 /*** Education Start ***/
 .education-content .education-item {
     position: relative;
@@ -238,3 +240,34 @@ i {
 }
 
 /*** Education End ***/
+
+
+
+.light {
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+}
+
+.activeDark {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+
+    :root {
+        --bs-light: #16243D;
+    }
+}
+
+.lightLeft {
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
+}
+
+.activeDarkLeft {
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+}
+
+.leftSide,
+.header-img {
+    transition: all 0.8s ease;
+}

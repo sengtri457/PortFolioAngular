@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { Infoservices } from '../../Services/infoservices';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-edu',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './edu.html',
   styleUrl: './edu.css',
 })

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import {
   about,
   contact,
@@ -13,6 +13,17 @@ import {
   providedIn: 'root',
 })
 export class Infoservices {
+  theme = signal<'light' | 'activeDark'>('light');
+  themeLeft = signal<'lightLeft' | 'activeDarkLeft'>('lightLeft');
+  toggleTheme() {
+    this.theme.update((current) =>
+      current == 'light' ? 'activeDark' : 'light'
+    );
+    this.themeLeft.update((current) =>
+      current == 'lightLeft' ? 'activeDarkLeft' : 'lightLeft'
+    );
+  }
+
   public leftSide: leftSide = {
     name: 'Bun sengtri',
     subtitle: 'Hello Im Bun sengtri',

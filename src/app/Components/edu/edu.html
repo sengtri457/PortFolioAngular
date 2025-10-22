@@ -2,14 +2,14 @@
     <div class="container-fluid-1 leftSide">
         <div class="container-fluid">
             <div class="row">
-                <div
-                    class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer">
-                    <div class="container p-3" data-aos="fade-down">
-                        <h3 class=" mb-1 text-white">{{edu.leftEdu.name}}</h3>
-                        <h1 class=" mb-1 text-white">{{edu.leftEdu.slogan}}</h1>
+                <div class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center position-relative leftSideContainer"
+                    [ngClass]="edu.themeLeft()">
+                    <div class="container p-3">
+                        <h3 class=" mb-1 ">{{edu.leftEdu.name}}</h3>
+                        <h1 class=" mb-1 ">{{edu.leftEdu.slogan}}</h1>
                     </div>
                 </div>
-                <div class="col-12 col-lg-9 bg-white p-5">
+                <div class="col-12 col-lg-9  p-5" [ngClass]="edu.theme()">
                     <div class="container pt-3">
                         <div class="education-content h-100 pt-6 ps-6 pb-6">
                             <div class="row g-4">
@@ -23,7 +23,7 @@
                                                 <span class="fa fa-calendar me-1"></span> {{item.date}}
                                             </div>
                                         </div>
-                                        <h4 class="mb-3 fw-bold text-dark">{{item.title}}</h4>
+                                        <h4 class="mb-3 fw-bold ">{{item.title}}</h4>
                                         <p class="mb-0">{{item.description}}
                                         </p>
                                     </div>

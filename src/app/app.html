@@ -1,10 +1,19 @@
 <div class="side-navbar position-fixed top-50 translate-middle-y end-0">
     <ul class="list-unstyled mb-0">
         <li *ngFor="let item of navItems" class="nav-item mb-2">
-            <a [routerLink]="item.link" class="d-flex align-items-center nav-link">
-                <i [class]="item.icon"></i>
-                <span class="nav-text ms-2">{{ item.label }}</span>
-            </a>
+            <ng-container *ngIf="item.label !== 'Dark'; else darkItem">
+                <a [routerLink]="item.link" class="d-flex align-items-center nav-link">
+                    <i [class]="item.icon"></i>
+                    <span class="nav-text ms-2">{{ item.label }}</span>
+                </a>
+            </ng-container>
+            <ng-template #darkItem>
+                <a href="#" class="d-flex align-items-center nav-link"
+                    (click)="app.toggleTheme(); $event.preventDefault()">
+                    <i [class]="item.icon"></i>
+                    <span class="nav-text ms-2">{{ item.label }}</span>
+                </a>
+            </ng-template>
         </li>
     </ul>
 </div>

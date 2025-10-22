@@ -17,7 +17,7 @@ export class App {
   app = inject(Infoservices);
 
   navItems = [
-    { icon: 'bi bi-house-door-fill', label: 'Home', link: '/home' },
+    { icon: 'bi bi-house-door-fill', label: 'Home', link: '/' },
     { icon: 'bi bi-person-lines-fill', label: 'About', link: '/about' },
     { icon: 'bi bi-envelope-fill', label: 'Contact', link: '/contact' },
     { icon: 'bi bi-briefcase-fill', label: 'Projects', link: '/portfolio' },
